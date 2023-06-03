@@ -1,12 +1,14 @@
 import React from 'react';
-import { Card, Container, Content, MinCard, View } from './styles';
-import { DiJava, DiJsBadge, DiReact, DiPostgresql, DiGit } from "react-icons/di";
-import { SiSpring, SiTypescript, SiCplusplus } from "react-icons/si";
+import { DiGit, DiJava, DiJsBadge, DiPostgresql, DiReact } from "react-icons/di";
+import { SiCplusplus, SiSpring, SiTypescript } from "react-icons/si";
+import { Card, Container, Content, TitleTechnologies } from './styles';
 
 export default function Technologies() {
     return (
         <Container className='technologies' id='technologies'>
-            <h1>TECHNOLOGIES</h1>
+            <TitleTechnologies>
+                <h1>TECHNOLOGIES</h1>
+            </TitleTechnologies>
             <Content>
                 <Card>
                     <img src={require('../../images/Moldura.png')} />

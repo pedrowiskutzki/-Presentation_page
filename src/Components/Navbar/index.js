@@ -1,12 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
+  Bars,
+  Button,
   Nav,
   NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink
+  NavMenu
 } from './NavbarElements';
 
 const Navbar = () => {
@@ -28,15 +26,30 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink onClick={() => closeeHamburguer()} hamburguer={hamburguer} to='/'>
+        <NavLink onClick={() => closeeHamburguer()} hamburguer={hamburguer} href='#home' to='/'>
         <img src={require('../../images/Logoteste.png')} width="75x" heigth="75px" alt='Logo - Pedro Wiskutzki Direciona para Home"'/>
         </NavLink>
         <Bars onClick={() => toggleHamburguer()} hamburguer={hamburguer}/>
         <NavMenu hamburguer={hamburguer}>
-          <NavLink id='firstLink' onClick={() => closeeHamburguer()} href='#home'>Home</NavLink>
-          <NavLink onClick={() => closeeHamburguer()} href='#technologies'>Technologies</NavLink>
-          <NavLink onClick={() => closeeHamburguer()} href='#portfolio'>Portfolio</NavLink>
-          <NavLink onClick={() => closeeHamburguer()} href='#contact'>Contact</NavLink>
+        
+        <Button class="cybr-btn">
+        <NavLink id='firstLink' onClick={() => closeeHamburguer()} href='#technologies'>Technologies</NavLink>
+        <span aria-hidden class="cybr-btn__glitch">Technologies_</span>
+        <span aria-hidden class="cybr-btn__tag">R25</span>  
+        </Button>
+
+        <Button class="cybr-btn">
+        <NavLink onClick={() => closeeHamburguer()} href='#portfolio'>Portfolio</NavLink>      
+        <span aria-hidden class="cybr-btn__glitch">Portfolio</span>
+        <span aria-hidden class="cybr-btn__tag">R24</span>  
+        </Button>
+
+        <Button class="cybr-btn">
+        <NavLink onClick={() => closeeHamburguer()} href='#contact'>Contact</NavLink>      
+        <span aria-hidden class="cybr-btn__glitch">Contact</span>
+        <span aria-hidden class="cybr-btn__tag">R23</span>  
+        </Button>
+
         </NavMenu>
       </Nav>
     </>

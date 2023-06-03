@@ -1,10 +1,12 @@
 import React from 'react';
-import { Card, Container, Content, MinCard, View } from './styles';
+import { Card, Container, Content, MinCard, TitlePortifolio } from './styles';
 
 export default function Portfolio() {
     return (
         <Container className='portfolio' id='portfolio'>
-            <h1>MY PORTFOLIO</h1>
+            <TitlePortifolio>
+            <h1>PORTFOLIO</h1>
+            </TitlePortifolio>
             <Content>
                 <Card>
                     <img src={require('../../images/siteOwallLine.png')} />

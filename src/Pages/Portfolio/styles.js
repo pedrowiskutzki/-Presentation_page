@@ -16,6 +16,7 @@ color:#ffff;
     }
 `;
 
+
 export const View = styled.div`
 display: flex;
 flex-direction: row;
@@ -130,6 +131,36 @@ justify-content: space-around;
     flex-direction: column;
     }
 
+`;
+
+export const TitlePortifolio = styled.div `
+    display: block;
+    margin: auto;
+    position: relative;  
+    margin-bottom: 30px;
+
+    ::after{
+    content:'';
+    display: block;
+    width: 110%;
+    border-left: 10px solid rgb(221, 221, 19);
+    border-right: 10px solid rgb(221, 221, 19);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid rgb(221, 221, 19);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom:-20px;
+    left: -27.5px;
+    filter: drop-shadow(0 -8px 8px rgba(221, 221, 19, 0.3));
+    }
+    h1{
+        font-size: 3em;
+        font-family: monospace, 'Courier New', Courier;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(221, 221, 19);
+    }
 `;
 
 export const MinCard = styled.div `
