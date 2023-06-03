@@ -4,10 +4,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
-  
+
   video {
     width: 100vw;
+    min-height: 50rem;
     height: 100vh;
     object-fit: cover;
   }
